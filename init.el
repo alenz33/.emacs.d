@@ -35,6 +35,9 @@
 (setq package-pinned-packages '((elpy . "elpy")))
 (package-initialize)
 
+;; Exec some preparations
+(load "~/.emacs.d/early_startup.el")
+
 ;; Load custom variables and faces
 (setq custom-file "~/.emacs.d/setup/custom.el")
 (load custom-file)
@@ -67,8 +70,12 @@
 ;; Load everything under local/ (settings that are not in the repo).
 (mapc 'load (directory-files "~/.emacs.d/local-setup" t "\\.el"))
 
+
 ;; Session (saves histories, variables, ...)
 ;; To be called after all other initialization
 (require 'session)
 (session-initialize)
 (put 'scroll-left 'disabled nil)
+
+;; Exec some finalization
+(load "~/.emacs.d/late_startup.el")

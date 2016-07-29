@@ -164,6 +164,9 @@
  '(ediff-window-setup-function (quote ediff-setup-windows-plain))
  '(eldoc-idle-delay 0.1)
  '(eldoc-print-after-edit t)
+ '(elpy-modules
+   (quote
+    (elpy-module-company elpy-module-eldoc elpy-module-pyvenv elpy-module-highlight-indentation elpy-module-yasnippet elpy-module-sane-defaults)))
  '(elpy-project-ignored-directories
    (quote
     (".bzr" "CVS" ".git" ".hg" ".svn" ".tox" "build" "dist" ".cask" "_build" "html")))
@@ -238,6 +241,7 @@
  '(helm-apropos-fuzzy-match t)
  '(helm-buffers-fuzzy-matching t)
  '(helm-locate-fuzzy-match t)
+ '(helm-mode t)
  '(helm-mode-fuzzy-match t)
  '(helm-recentf-fuzzy-match t)
  '(hi-lock-auto-select-face t)
@@ -304,6 +308,7 @@
  '(mouse-yank-at-point t)
  '(mumamo-chunk-coloring (quote submode-colored))
  '(mumamo-set-major-mode-delay 0.3)
+ '(neo-click-changes-root nil)
  '(neo-dont-be-alone t)
  '(neo-keymap-style (quote concise))
  '(neo-persist-show t)
@@ -408,6 +413,7 @@
  '(smex-history-length 50)
  '(smex-save-file "~/.emacs.d/saved/smex-items")
  '(snippet-bound-face (quote font-latex-italic-face))
+ '(speedbar-default-position (quote left))
  '(speedbar-directory-button-trim-method (quote trim))
  '(speedbar-hide-button-brackets-flag nil)
  '(speedbar-ignored-modes (quote (fundamental-mode custom-mode)))
@@ -613,7 +619,7 @@
  '(hexl-address-region ((t (:inherit font-lock-constant-face))))
  '(hexl-ascii-region ((t (:inherit font-lock-string-face))))
  '(hideshowvis-hidable-face ((t (:foreground "#999"))))
- '(highlight-indentation-face ((t nil)))
+ '(highlight-indentation-face ((t (:background "#3f474a" :width condensed))))
  '(hs-face ((t (:box 1 :height 0.8))))
  '(hs-fringe-face ((t (:foreground "#999"))))
  '(nxml-comment-content-face ((t (:inherit font-lock-comment-face))) t)
