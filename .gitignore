@@ -1,0 +1,14 @@
+*.elc
+*.pyc
+*~
+#*
+.#*
+
+elpa/*-readme.txt
+elpa/archives/
+saved/
+local-setup/
+TAGS
+.cask/
+irony/
+network-security.data
