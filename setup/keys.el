@@ -115,7 +115,9 @@
 (global-set-key (kbd "<f11>") #'fullscreen)
 
 ;; Quickly compare two windows with almost same content
-(global-set-key (kbd "<f12>") #'compare-windows)
+;; (global-set-key (kbd "<f12>") #'compare-windows)
+
+(global-set-key (kbd "<f12>") #'neotree-toggle)
 
 ;; Alt-space expands
 (global-set-key (kbd "M-SPC") #'hippie-expand)
@@ -350,3 +352,10 @@
           (define-key map [remap autopair-extra-skip-close-maybe] #'self-insert-command)
           (define-key map [remap autopair-skip-close-maybe] #'self-insert-command))
         (list rectangular-region-mode-map mc/keymap))
+
+;; helm
+(require 'helm)
+(define-key helm-map (kbd "TAB") 'helm-execute-persistent-action) ; rebind tab to do persistent action
+(define-key helm-map (kbd "<backspace>") 'backward-delete-word)
+(define-key helm-map (kbd "C-i") 'helm-execute-persistent-action) ; make TAB works in terminal
+(define-key helm-map (kbd "C-z")  'helm-select-action) ; list actions using C-z
