@@ -1,11 +1,7 @@
-Emacs configuration of Georg Brandl
-===================================
+Emacs configuration of Alexander Lenz
+=====================================
 
-This is my personal ``.emacs.d`` directory. Feel free to copy anything
-you like and adapt it to your liking.
-
-I'm just committing anything installed through elpa, so it might not
-always be up-to-date.
+Personal emacs configuration. Originally forked from birkenfeld/.emacs.d.
 
 **Purpose of subdirectories**
 
